@@ -1,6 +1,6 @@
 # To-Do List (React + Vite)
 
-Ứng dụng To-Do List xây dựng theo tư duy React: Component, Props, State. Giai đoạn đầu có UI với dữ liệu giả (hard-coded). Sau đó dùng `useState` để quản lý thêm/xoá/sửa/đánh dấu hoàn thành.
+Ứng dụng To-Do List xây dựng theo React
 
 ## Cấu trúc thư mục
 
