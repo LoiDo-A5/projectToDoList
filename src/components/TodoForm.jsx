@@ -1,12 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
 
-export default function TodoForm({ onAdd }) {
+export default function TodoForm({ onAdd, onToast }) {
   const [value, setValue] = useState('')
 
   function handleSubmit(e) {
     e.preventDefault()
-    onAdd?.(value)
+    const title = value.trim()
+    if (!title) {
+      onToast?.('Vui lòng nhập nội dung công việc')
+      return
+    }
+    onAdd?.(title)
     setValue('')
   }
 
